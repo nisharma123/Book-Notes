@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Notes</title>
+    <link href="/styles/main.css" rel="stylesheet">
+</head>
+<body>
+    <form action="/submit" method="post">
+        <input type="hidden" name="id" value="">
+
+        <label for="book-img" class="book-img">Book Cover Link:</label><br>
+        <input type="text" id="book-cover" name="book_cover" value=""><br><br>
+
+        <label for="book-title" class="book-title">Book Name:</label><br>
+        <input type="text" id="book-title" name="book_title" value=""><br><br>
+
+        <label for="author" class="author">Author:</label><br>
+        <input type="text" id="author" name="author" value="">
+
+        <label for="rating-select" class="ratings">Choose the ratings:</label><br>
+        <input type="text" id="ratings" name="ratings" value=""><br><br>
+
+        <label for="review">Review:</label><br><br>
+        <input type="text" id="review" name="review" value=""><br><br>
+
+        <button type="submit" value="Submit" id="submit" formmethod="post">Submit</button>
+    </form>
+</body>
+</html>

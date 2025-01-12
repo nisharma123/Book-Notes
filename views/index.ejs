@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Notes</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <h1>Book Notes</h1>
+    <input type="text" id="book_name" placeholder="Enter a book name">
+ 
+    <div class="book-container">
+      <% if (listItems && listItems.length > 0) { %> 
+        <% for (const item of listItems) { %>
+          <div class="book-info">
+            <img height="414px" width="285px" src="<%= item.book_cover %>" class="book-cover"> 
+          <h2><%= item.book_title %></h2> 
+          <h3>By <%= item.author %></h3> 
+          <p>Rating: <%= item.rating %> stars</p> 
+          <p><%= item.review %></p>
+          <a href="/edit/<%= item.id %>">Want to change?</a>
+          <a href="/delete/<%= item.id %>" method="DELETE"> Want to delete?</a>
+          </div>
+          
+        <% } %>
+      
+    <% } else { %>
+      <p>No books found.</p>
+    <% } %>
+    
+    <a href="/add-book" class="add-book">Want to add?</a>
+    </div>
+      
+</body>
+</html>

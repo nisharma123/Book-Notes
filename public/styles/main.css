@@ -1,0 +1,124 @@
+body {
+    background-color: #FFEFEF;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: #257180;
+    font-weight: bold;
+    font-size: 55px;
+    text-align: center;
+}
+
+input {
+    width: 400px;
+    height: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    background-color: #FFEFEF;
+    color: #FF3EA5;
+    font-size: large;
+    padding: 5px;
+}
+
+h2 {
+    color: #FD8B51;
+    padding: 10px;
+    padding-left: 15px;
+    padding-top: 50px;
+    font-size: 30px;
+}
+p {
+    padding-right: 50px;
+    padding-top: 10px;
+    font-weight: normal;
+    color: #CB6040;
+    font-size: large;
+}
+
+h3 {
+    color: #FFB200;
+    font-size: 20px;
+}
+
+#author {
+    width: 300px;
+    border-radius: 5px bold white;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+#review {
+    width: 700px;
+    height: 500px;
+}
+
+#ratings {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ratings {
+    margin-top: 45px;
+}
+
+.book-container a {
+    color: #D14D72;
+    font-size: larger;
+    padding-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    margin-right: 10px
+    
+}
+
+button {
+    width: 75px;
+    margin-bottom: 20px;
+    background-color: #D14D72;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    padding-bottom: 10px;
+    border-color: white;
+}
+
+.book-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+
+.book-container img {
+    float: left; 
+    margin-top: 30px; 
+    margin-right: 20px;
+    margin: 10px;
+    padding: 20px;
+  }
+
+.book-info {
+    flex: 1;
+    align-items: flex-start;
+}
+
+.book-container .add-book {
+    text-align: center;
+    font-size: 25px;
+}
